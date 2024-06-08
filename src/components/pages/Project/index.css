@@ -1,0 +1,22 @@
+.project-container{
+    padding: 10px 160px;
+}
+.btn-back{
+    padding: 4px 8px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.home-icon{
+    font-size: medium;
+    margin-left: 2px;
+    margin: 2px;
+}
+.home-back-content{
+    margin-top: 3px;
+}
+
