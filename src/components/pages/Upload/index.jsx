@@ -2,35 +2,40 @@ import { useState } from 'react'
 import UploadNav from '../../layout/UploadNav'
 import './index.css'
 import EmptyUploads from '../../layout/EmptyUploads'
+import Modal from '../../layout/Modal'
 
 const uploadStatus = {
     project:"PROJECT",
     widgetConfig:"WIDGET CONFIGURATION"
 }
 
+const UploadModal = ()=><div className='modal-upload modal-upload-container'>
+    <h1 className='modal-upload-heading'>Upload</h1>
+    <div className='modal-upload-input-container'>
+        <label htmlFor="name">Name</label>
+        
+        <input type="text" className='input-upload-modal' />
+    </div>
+    <div className='modal-upload-input-container'>
+        <label htmlFor="name">Transcript</label>
+       
+        <textarea type="text" rows={8} className='input-upload-modal' />
+    </div>
+    <div className='modal-upload-btn-container'>
+    <button className='modal-upload-btn'>upload</button>
+    </div>
+</div>
+
 const ProjectView = ()=><div>
     <div className='upload-project-view-container'>
-        <div className='upload-card'>
+        <Modal btnClass={'upload-card-modal'} btnText={<div className='upload-card'>
             <img src="youtube.png" className='youtube-logo' alt="youtube" />
-            <div className='upload-card-details'>
-                <p>Upload</p>
-                <p>Youtube video</p>
-            </div>
-        </div>
-        <div className='upload-card'>
-            <img src="spotify.png" className='youtube-logo' alt="youtube" />
             <div className='upload-card-details'>
                 <p>Upload</p>
                 <p>Spofity podcast</p>
             </div>
-        </div>
-        <div className='upload-card'>
-            <img src="ree.png" className='youtube-logo' alt="youtube" />
-            <div className='upload-card-details'>
-                <p>Upload from</p>
-                <p>RSS Feed</p>
-            </div>
-        </div>
+        </div>} modalContent={<UploadModal/>}/>    
+        
     </div>
     <EmptyUploads/>
 </div>

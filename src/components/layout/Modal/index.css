@@ -20,3 +20,8 @@ position: fixed;
     line-height: 1.2;
     border-radius: 12px;
 }
+.modal-close{
+    display: flex;
+    justify-content: flex-end;
+    
+}

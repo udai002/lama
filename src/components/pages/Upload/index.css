@@ -77,3 +77,37 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+.upload-card-modal{
+    background-color: white;
+    border: none;
+}
+.modal-upload , .modal-upload-input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 40vw;
+    
+}
+.modal-upload-container{
+    padding: 18px;
+}
+.modal-upload-btn-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+.modal-upload-btn{
+    background-color: #211935;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+
+}
+.input-upload-modal{
+    padding: 5px;
+    margin-bottom: 12px;
+}
+.modal-upload-heading{
+    margin-bottom: 20px;
+}
