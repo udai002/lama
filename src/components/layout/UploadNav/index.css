@@ -1,0 +1,38 @@
+.upload-nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.language-img{
+    width: 22px;
+    margin:0 4px;
+}
+.language-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.upload-nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-notification{
+    font-size: 30px;
+}
+.home-icon{
+    font-size: 20px;
+    color: #7E22CE;
+}
+.upload-navigator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+.current-position{
+    color: #7E22CE;
+}
