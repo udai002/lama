@@ -1,0 +1,32 @@
+.empty-divder{
+    text-align: center;
+    margin: 12px 0;
+    color: #999999;
+    font-size: large;
+}
+.empty-upload-input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-style: dashed;
+    padding-bottom: 22px;
+    border-radius: 22px;
+}
+.para2{
+    color: #00000066;
+    margin: 18px 0;
+}
+.empty-upload-btn{
+    border: 2px solid #7E22CE;
+    padding: 10px 12px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 27px;
+    color: #7E22CE;
+}
+.empty-input-file{
+    display: none;
+}

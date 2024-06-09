@@ -56,3 +56,24 @@
 .active-list-num{
     background-color: #3C3C3C;
 }
+.upload-card{
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow:  1px 2px 4px #888888;
+    margin: 20px;
+}
+.upload-card-details{
+    margin: 0 10px;
+}
+.youtube-logo{
+    width: 50px;
+}
+.upload-project-view-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
