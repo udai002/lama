@@ -9,11 +9,13 @@ import Upload from './components/pages/Upload'
 function App() {
   const [count, setCount] = useState(0)
 
+  const [projects , setProjects] = useState({dataSet : []})
+
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' Component={Project} />
+          <Route path='/' element={<Project projects= {projects} updateProjects={setProjects}/>} />
           <Route path='/upload' Component={Upload} />
         </Routes>
         {/* <Project/> */}

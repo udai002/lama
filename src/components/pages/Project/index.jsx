@@ -5,13 +5,13 @@ import { VscHome } from "react-icons/vsc";
 import './index.css'
 import ProjectList from "../../layout/ProjectList";
 
-const Project = ()=>{
+const Project = (props)=>{
+    const {projects , updateProjects} = props
     return <div>
         <Navbar/>
         <div className="project-container">
             <button className="btn-back"><VscHome className="home-icon"/><span className="home-back-content">Back to Home</span></button>
-        {/* <EmptyProject/> */}
-        <ProjectList/>
+        {projects.dataSet.length ===0?<EmptyProject projects={projects} updateProjects={updateProjects} />:<ProjectList projects={projects} updateProjects={updateProjects}/>}
         </div>
     </div>
 }

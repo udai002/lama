@@ -50,3 +50,7 @@ label{
     background-color: #7E22CE;
     color: white;
 }
+.error-msg{
+    color: red;
+    margin: 1px 0;
+}
